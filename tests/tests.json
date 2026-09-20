@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Open the apology letter",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": ["apology letter interaction", "scroll-reveal sections", "continuous handwritten text animation"],
+    "description": "Verifies the main emotional interaction opens the first letter.",
+    "steps": [
+      "Open the website",
+      "Scroll to the first letter",
+      "Tap the envelope"
+    ],
+    "expected": "The envelope opens, the apology letter becomes visible, and its handwritten text begins appearing continuously like it is being written on the paper."
+  },
+  {
+    "name": "Play a voice note on mobile",
+    "viewport": "mobile",
+    "covers": ["voice note playback", "mobile audio interaction"],
+    "description": "Verifies a voice note card can be played from a phone-sized layout.",
+    "steps": [
+      "Scroll to the voice note section",
+      "Tap the first play button",
+      "Observe the audio card"
+    ],
+    "expected": "The play control changes to pause and playback starts without leaving the page."
+  },
+  {
+    "name": "Open a memory card",
+    "viewport": "desktop",
+    "covers": ["photo gallery", "memory modal"],
+    "description": "Verifies a memory opens into a focused modal and can be closed.",
+    "steps": [
+      "Scroll to the memories section",
+      "Tap a memory card",
+      "Tap close"
+    ],
+    "expected": "A memory modal opens and closes back to the gallery."
+  },
+  {
+    "name": "Use the ambient music control",
+    "viewport": "mobile",
+    "covers": ["ambient music control", "audio control"],
+    "description": "Verifies the persistent music control responds to a user tap.",
+    "steps": [
+      "Tap the music control",
+      "Observe its label",
+      "Continue scrolling"
+    ],
+    "expected": "The control toggles its label and the page remains usable."
+  }
+]
